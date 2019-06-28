@@ -39,47 +39,7 @@ type Config struct {
 	Destination Destination `json:"destinations"`
 }
 
-// type Config struct {
-// 	Sources struct {
-// 		Mysql []struct {
-// 			Host string
-// 			User string
-// 			Pass string
-// 			Db   string
-// 			Port int
-// 		}
-// 	}
-// 	Destinations struct {
-// 		S3 []struct {
-// 			AccessKey string
-// 			Secret    string
-// 			Region    string
-// 			Bucket    string
-// 		}
-// 	}
-// }
-
 func main() {
-
-	// resultFilename, _ := mysql.Dump()
-
-	// f, _ := os.Open(resultFilename)
-	// reader := bufio.NewReader(f)
-	// content, _ := ioutil.ReadAll(reader)
-
-	// name := resultFilename + ".gz"
-
-	// f, _ = os.Create(name)
-	// w := gzip.NewWriter(f)
-	// w.Write(content)
-	// w.Close()
-
-	// aws.Upload(name, name)
-	// _ = os.Remove(resultFilename)
-	// _ = os.Remove(name)
-
-	// backup.Compress("./", os.TempDir()+"/files.zip")
-	// aws.Upload(os.TempDir()+"/files.zip", "test/files.zip")
 
 	configFile, err := os.Open("./config.json")
 
