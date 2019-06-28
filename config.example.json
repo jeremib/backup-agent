@@ -1,0 +1,23 @@
+{
+    "sources": {
+        "mysql": [
+            {
+                "host": "127.0.0.1",
+                "user": "root",
+                "pass": "root",
+                "db": "db",
+                "port": 3306
+            }
+        ]
+    },
+    "destinations": {
+        "s3": [
+            {
+                "accessKey": "",
+                "secret": "",
+                "region": "",
+                "bucket": ""
+            }
+        ]
+    }
+}
